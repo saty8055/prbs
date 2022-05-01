@@ -28,7 +28,7 @@ const routes: Routes = [{
     component: ServicesComponent
   },{
     path: "",
-    redirectTo: "/employees",
+    redirectTo: "/customers",
     pathMatch: "full"
   }],
   canActivate: [AuthGuardService]
