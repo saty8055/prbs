@@ -71,7 +71,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!-- Topbar -->\n<nav class=\"navbar navbar-fixed-top boxed\" style=\"z-index:10\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle topSpan\" (click)=\"toggleRightBar()\">\n                <span class=\"fa fa-user-circle\"></span>\n            </button>\n            <div class=\"navbar-brand\">\n                <div class=\"logoHolder\">\n                    <a class=\"btn\" (click)=\"toggleSideBar()\" [tooltip]=\"sideBar ? 'Hide Sidebar' : 'Open SideBar'\" placement=\"right\" show-delay=\"200\"><span class=\"fa fa-bars\"></span> </a>\n                    <img src=\"/assets/logo.png\" style=\"cursor: none;\">\n                    <a class=\"btn\" [tooltip]=\"sideBar ? 'HC MS' : 'HC MS'\" placement=\"right\" show-delay=\"200\" style=\"font-family: serif;\">pr-bs </a>\n                </div>\n                \n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\"><i class=\"fa fa-user-circle-o\"></i> Profile</a></li>\n                <li><a (click)=\"logout()\"><i class=\"fa fa-power-off\"></i> Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<!-- SideBar -->\n<div class=\"sideBar boxed\" [class.sideBarOpen]=\"sideBar\" style=\"z-index:100\">\n    <a [class.active]=\"key=='employees'\" (click)=\"activate('employees')\" [class.centered]=\"!sideBar\" tooltip=\"Employees\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-address-card\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-address-card\"></span> Employees</span>\n    </a>\n    <a [class.active]=\"key=='tasks'\" (click)=\"activate('tasks')\" [class.centered]=\"!sideBar\" tooltip=\"Tasks\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-black-tie\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-black-tie\"></span> Tasks</span>\n    </a>\n    <a [class.active]=\"key=='services'\" (click)=\"activate('services')\" [class.centered]=\"!sideBar\" tooltip=\"Services\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-cog\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-cog\"></span> Services</span>\n    </a>\n</div>\n\n<!-- Right SideBar -->\n<div class=\"rightSideBar\" [class.rightSideBarOpen]=\"rightSideBar\" style=\"z-index:100\">\n    <a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-user-circle-o\"></span> Profile</span>\n    </a>\n    <a (click)=\"logout()\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-power-off\"></span>Logout</span>\n    </a>\n</div>\n\n<div class=\"contentBox\" [class.contentWall]=\"sideBar\">\n    <router-outlet></router-outlet>\n</div>";
+    __webpack_exports__["default"] = "<!-- Topbar -->\n<nav class=\"navbar navbar-fixed-top boxed\" style=\"z-index:10\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle topSpan\" (click)=\"toggleRightBar()\">\n                <span class=\"fa fa-user-circle\"></span>\n            </button>\n            <div class=\"navbar-brand\">\n                <div class=\"logoHolder\">\n                    <a class=\"btn\" (click)=\"toggleSideBar()\" [tooltip]=\"sideBar ? 'Hide Sidebar' : 'Open SideBar'\" placement=\"right\" show-delay=\"200\"><span class=\"fa fa-bars\"></span> </a>\n                    <img src=\"/assets/logo.png\" style=\"cursor: none;\">\n                    <a class=\"btn\" [tooltip]=\"sideBar ? 'HC MS' : 'HC MS'\" placement=\"right\" show-delay=\"200\" style=\"font-family: serif;\">pr-bs </a>\n                </div>\n                \n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\"><i class=\"fa fa-user-circle-o\"></i> Profile</a></li>\n                <li><a (click)=\"logout()\"><i class=\"fa fa-power-off\"></i> Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<!-- SideBar -->\n<div class=\"sideBar boxed\" [class.sideBarOpen]=\"sideBar\" style=\"z-index:100\">\n    <a [class.active]=\"key=='customers'\" (click)=\"activate('customers')\" [class.centered]=\"!sideBar\" tooltip=\"Customers\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-address-card\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-address-card\"></span> Customers</span>\n    </a>\n    <a [class.active]=\"key=='medicines'\" (click)=\"activate('medicines')\" [class.centered]=\"!sideBar\" tooltip=\"Medicine\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-plus\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-plus\"></span> Medicine</span>\n    </a>\n    <a [class.active]=\"key=='sales'\" (click)=\"activate('sales')\" [class.centered]=\"!sideBar\" tooltip=\"Sales\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-usd\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-usd\"></span> Sales</span>\n    </a>\n</div>\n\n<!-- Right SideBar -->\n<div class=\"rightSideBar\" [class.rightSideBarOpen]=\"rightSideBar\" style=\"z-index:100\">\n    <a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-user-circle-o\"></span> Profile</span>\n    </a>\n    <a (click)=\"logout()\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-power-off\"></span>Logout</span>\n    </a>\n</div>\n\n<div class=\"contentBox\" [class.contentWall]=\"sideBar\">\n    <router-outlet></router-outlet>\n</div>";
     /***/
   },
 
@@ -91,7 +91,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<table class=\"table table-condensed\">\n    <thead>\n        <tr>\n            <th><button class=\"btn btnPrime fullCover\" data-toggle=\"modal\" data-target=\"#addFunds\"><span class=\"fa fa-plus\"></span> Add Employee</button></th>\n        </tr>\n    </thead>\n</table>\n\n\n<div class=\"table-responsive\">\n    <table class=\"table table-condensed table-bordered\">\n        <thead>\n            <tr>\n                <th class=\"centered indexCell matchDouble\">#</th>\n                <th class=\"extendedCell matchDouble\">Employee ID</th>\n                <th class=\"centered\">Employee CODE</th>\n                <th class=\"centered\">Name</th>\n                <th class=\"centered\">Phone</th>\n                <th class=\"centered\">e-Mail</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr *ngFor=\"let record of funds; let i=index;\">\n                <th>{{i+1}}</th>\n                <td>{{record.employeeId}}</td>\n                <td>{{record.employeeCode}}</td>\n                <td>{{record.name}}</td>\n                <td>{{record.phone}}</td>\n                <td>{{record.email}}</td>\n            </tr>\n            <tr *ngIf=\"funds.length <1 \">\n                <th colspan=\"6\">No Record found</th>\n            </tr>\n        </tbody>\n    </table>\n</div>\n\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"addFunds\" role=\"dialog\">\n    <div class=\"modal-dialog\">\n\n        <!-- Modal content-->\n        <div class=\"modal-content boxed\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n                <h4 class=\"modal-title heading\">Add Funds !</h4>\n            </div>\n            <form [formGroup]=\"form\" (ngSubmit)=\"validateAndAdd()\">\n                <div class=\"modal-body\">\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-envelope\"></i></span>\n                        <input id=\"email\" type=\"text\" class=\"form-control\" formControlName=\"email\"\n                            placeholder=\"E-Mail\">\n                    </div>\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-info\"></i></span>\n                        <input id=\"employeeCode\" type=\"text\" class=\"form-control\" formControlName=\"employeeCode\"\n                            placeholder=\"Employee Code\">\n                    </div>\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                        <input id=\"fullName\" type=\"text\" class=\"form-control\" formControlName=\"name\"\n                            placeholder=\"Full Name\">\n                    </div>\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                        <input id=\"phone\" type=\"text\" class=\"form-control\" formControlName=\"phone\"\n                            placeholder=\"Phone\">\n                    </div>\n                </div>\n                <div class=\"modal-footer centered\">\n                    <button type=\"button\" class=\"btn\" data-dismiss=\"modal\" (click)=\"validateAndAdd()\">Add Employee</button>\n                </div>\n            </form>\n        </div>\n\n    </div>\n</div>\n\n<app-loader></app-loader>";
+    __webpack_exports__["default"] = "<table class=\"table table-condensed\">\n    <thead>\n        <tr>\n            <th><button class=\"btn btnPrime fullCover\" data-toggle=\"modal\" data-target=\"#addFunds\"><span class=\"fa fa-plus\"></span> Add Customer</button></th>\n        </tr>\n    </thead>\n</table>\n\n\n<div class=\"table-responsive\">\n    <table class=\"table table-condensed table-bordered\">\n        <thead>\n            <tr>\n                <th class=\"centered indexCell matchDouble\">#</th>\n                <th class=\"extendedCell matchDouble\">Customer ID</th>\n                <th class=\"centered\">Name</th>\n                <th class=\"centered\">Phone</th>\n                <th class=\"centered\">e-Mail</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr *ngFor=\"let record of funds; let i=index;\">\n                <th>{{i+1}}</th>\n                <td>{{record.customerId}}</td>\n                <td>{{record.name}}</td>\n                <td>{{record.phone}}</td>\n                <td>{{record.email}}</td>\n            </tr>\n            <tr *ngIf=\"funds.length <1 \">\n                <th colspan=\"5\">No Record found</th>\n            </tr>\n        </tbody>\n    </table>\n</div>\n\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"addFunds\" role=\"dialog\">\n    <div class=\"modal-dialog\">\n\n        <!-- Modal content-->\n        <div class=\"modal-content boxed\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n                <h4 class=\"modal-title heading\">Add Customer !</h4>\n            </div>\n            <form [formGroup]=\"form\" (ngSubmit)=\"validateAndAdd()\">\n                <div class=\"modal-body\">\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-envelope\"></i></span>\n                        <input id=\"email\" type=\"text\" class=\"form-control\" formControlName=\"email\"\n                            placeholder=\"E-Mail\">\n                    </div>\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                        <input id=\"fullName\" type=\"text\" class=\"form-control\" formControlName=\"name\"\n                            placeholder=\"Full Name\">\n                    </div>\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                        <input id=\"phone\" type=\"text\" class=\"form-control\" formControlName=\"phone\"\n                            placeholder=\"Phone\">\n                    </div>\n                </div>\n                <div class=\"modal-footer centered\">\n                    <button type=\"button\" class=\"btn\" data-dismiss=\"modal\" (click)=\"validateAndAdd()\">Add Customer</button>\n                </div>\n            </form>\n        </div>\n\n    </div>\n</div>\n\n<app-loader></app-loader>";
     /***/
   },
 
@@ -131,7 +131,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<table class=\"table table-condensed\">\n    <thead>\n        <tr>\n            <th><button class=\"btn btnPrime fullCover\" data-toggle=\"modal\" data-target=\"#addFunds\"><span class=\"fa fa-plus\"></span> Add Service Request</button></th>\n        </tr>\n    </thead>\n</table>\n\n\n<div class=\"table-responsive\">\n    <table class=\"table table-condensed table-bordered\">\n        <thead>\n            <tr>\n                <th class=\"centered indexCell matchDouble\">#</th>\n                <th class=\"extendedCell matchDouble\">Service ID</th>\n                <th class=\"centered\">Service Name</th>\n                <th class=\"centered\">Priority</th>\n                <th class=\"centered\">Description</th>\n                <th class=\"centered\">Remarks</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr *ngFor=\"let record of funds; let i=index;\">\n                <th>{{i+1}}</th>\n                <td>{{record.serviceId}}</td>\n                <td>{{record.serviceName}}</td>\n                <td>{{record.priority == 0 ? 'MEDIUM' : record.priority >0 ? 'HIGH' : 'LOW'}}</td>\n                <td>{{record.description}}</td>\n                <td>{{record.remarks}}</td>\n            </tr>\n            <tr *ngIf=\"funds.length <1 \">\n                <th colspan=\"6\">No Record found</th>\n            </tr>\n        </tbody>\n    </table>\n</div>\n\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"addFunds\" role=\"dialog\">\n    <div class=\"modal-dialog\">\n\n        <!-- Modal content-->\n        <div class=\"modal-content boxed\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n                <h4 class=\"modal-title heading\">Add Service Request !</h4>\n            </div>\n            <form [formGroup]=\"form\" (ngSubmit)=\"validateAndAdd()\">\n                <div class=\"modal-body\">\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-cog\"></i></span>\n                        <input id=\"serviceName\" type=\"text\" class=\"form-control\" formControlName=\"serviceName\"\n                            placeholder=\"Service Name\">\n                    </div>\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-info\"></i></span>\n                        <input id=\"description\" type=\"text\" class=\"form-control\" formControlName=\"description\"\n                            placeholder=\"Service Description\">\n                    </div>\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-fax\"></i></span>\n                        <input id=\"remarks\" type=\"text\" class=\"form-control\" formControlName=\"remarks\"\n                            placeholder=\"Remarks\">\n                    </div>\n                    <div class=\"input-group\" style=\"width: 100%;\">\n                        <select class=\"form-control\" formControlName=\"priority\">\n                            <option value=\"1\"> High </option>\n                            <option value=\"0\"> Medium </option>\n                            <option value=\"-1\"> Low </option>\n                    </select></div>\n                </div>\n                <div class=\"modal-footer centered\">\n                    <button type=\"button\" class=\"btn\" data-dismiss=\"modal\" (click)=\"validateAndAdd()\">Add Employee</button>\n                </div>\n            </form>\n        </div>\n        \n    </div>\n</div>\n\n<app-loader></app-loader>";
+    __webpack_exports__["default"] = "<table class=\"table table-condensed\">\n    <thead>\n        <tr>\n            <th><button class=\"btn btnPrime fullCover\" data-toggle=\"modal\" data-target=\"#addFunds\"><span class=\"fa fa-plus\"></span> Add Medicine</button></th>\n        </tr>\n    </thead>\n</table>\n\n\n<div class=\"table-responsive\">\n    <table class=\"table table-condensed table-bordered\">\n        <thead>\n            <tr>\n                <th class=\"centered indexCell matchDouble\">#</th>\n                <th class=\"extendedCell matchDouble\">Medicine ID</th>\n                <th class=\"centered\">Medicine Name</th>\n                <th class=\"centered\">Unit Price</th>\n                <th class=\"centered\">Stock</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr *ngFor=\"let record of funds; let i=index;\">\n                <th>{{i+1}}</th>\n                <td>{{record.medicineId}}</td>\n                <td>{{record.medicineName}}</td>\n                <td>{{record.mrp}}</td>\n                <td>{{record.stock}}</td>\n            </tr>\n            <tr *ngIf=\"funds.length <1 \">\n                <th colspan=\"5\">No Record found</th>\n            </tr>\n        </tbody>\n    </table>\n</div>\n\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"addFunds\" role=\"dialog\">\n    <div class=\"modal-dialog\">\n\n        <!-- Modal content-->\n        <div class=\"modal-content boxed\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n                <h4 class=\"modal-title heading\">Add Medicine !</h4>\n            </div>\n            <form [formGroup]=\"form\" (ngSubmit)=\"validateAndAdd()\">\n                <div class=\"modal-body\">\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-cog\"></i></span>\n                        <input id=\"medicineName\" type=\"text\" class=\"form-control\" formControlName=\"medicineName\"\n                            placeholder=\"Medicine Name\">\n                    </div>\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-fax\"></i></span>\n                        <input id=\"mrp\" type=\"number\" class=\"form-control\" formControlName=\"mrp\"\n                            placeholder=\"MRP\">\n                    </div>\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-fax\"></i></span>\n                        <input id=\"stock\" type=\"number\" class=\"form-control\" formControlName=\"stock\"\n                            placeholder=\"Stock\">\n                    </div>\n                </div>\n                <div class=\"modal-footer centered\">\n                    <button type=\"button\" class=\"btn\" data-dismiss=\"modal\" (click)=\"validateAndAdd()\">Add Medicine</button>\n                </div>\n            </form>\n        </div>\n        \n    </div>\n</div>\n\n<app-loader></app-loader>";
     /***/
   },
 
@@ -151,7 +151,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<table class=\"table table-condensed\">\n    <thead>\n        <tr>\n            <th><button class=\"btn btnPrime fullCover\" data-toggle=\"modal\" data-target=\"#addFunds\"><span class=\"fa fa-plus\"></span> Add New Task</button></th>\n        </tr>\n    </thead>\n</table>\n\n\n<div class=\"table-responsive\">\n    <table class=\"table table-condensed table-bordered\">\n        <thead>\n            <tr>\n                <th class=\"centered indexCell matchDouble\">#</th>\n                <th class=\"extendedCell matchDouble\">Task ID</th>\n                <th class=\"centered\">Employee CODE</th>\n                <th class=\"centered\">Name</th>\n                <th class=\"centered\">Task Name</th>\n                <th class=\"centered\">Employee Phone</th>\n                <th class=\"centered\">Employee e-Mail</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr *ngFor=\"let record of funds; let i=index;\">\n                <th>{{i+1}}</th>\n                <td>{{record.taskId}}</td>\n                <td>{{record.employee.employeeCode}}</td>\n                <td>{{record.employee.name}}</td>\n                <td>{{record.taskName}}</td>\n                <td>{{record.employee.phone}}</td>\n                <td>{{record.employee.email}}</td>\n            </tr>\n            <tr *ngIf=\"funds.length <1 \">\n                <th colspan=\"7\">No Record found</th>\n            </tr>\n        </tbody>\n    </table>\n</div>\n\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"addFunds\" role=\"dialog\">\n    <div class=\"modal-dialog\">\n\n        <!-- Modal content-->\n        <div class=\"modal-content boxed\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n                <h4 class=\"modal-title heading\">Add Funds !</h4>\n            </div>\n                <div class=\"modal-body\">\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-black-tie\"></i></span>\n                        <input id=\"name\" type=\"text\" class=\"form-control\"\n                            placeholder=\"Task Name\" [(ngModel)]=\"taskName\">\n                    </div>\n                    <div class=\"input-group\" style=\"width: 100%;\">\n                        <select class=\"form-control\"\n                        [(ngModel)]=\"employeeId\">\n                        <option value=\"noFilter\"> -- Select Employee -- </option>\n                        <option *ngFor=\"let employee of employees; let i=index;\" [value]=\"employee.employeeId\">\n                            {{employee.name | titlecase}} - {{employee.employeeCode}}</option>\n                    </select>\n                    </div>\n                </div>\n                <div class=\"modal-footer centered\">\n                    <button type=\"button\" class=\"btn\" data-dismiss=\"modal\" (click)=\"validateAndAdd()\">Add Task</button>\n                </div>\n        </div>\n\n    </div>\n</div>\n\n<app-loader></app-loader>";
+    __webpack_exports__["default"] = "<table class=\"table table-condensed\">\n    <thead>\n        <tr>\n            <th><button class=\"btn btnPrime fullCover\" data-toggle=\"modal\" data-target=\"#addFunds\"><span class=\"fa fa-plus\"></span> Add New Sale</button></th>\n        </tr>\n    </thead>\n</table>\n\n\n<div class=\"table-responsive\">\n    <table class=\"table table-condensed table-bordered\">\n        <thead>\n            <tr>\n                <th class=\"centered indexCell matchDouble\">#</th>\n                <th class=\"extendedCell matchDouble\">Sale ID</th>\n                <th class=\"centered\">Units Sold</th>\n                <th class=\"centered\">Unit Price</th>\n                <th class=\"centered\">Total Price</th>\n                <th class=\"centered\">Medicine Name</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr *ngFor=\"let record of funds; let i=index;\">\n                <th>{{i+1}}</th>\n                <td>{{record.saleId}}</td>\n                <td>{{record.units}}</td>\n                <td>{{record.medicine.mrp}}</td>\n                <td>{{record.medicine.medicineName * record.units}}</td>\n                <td>{{record.medicine.medicineName}}</td>\n            </tr>\n            <tr *ngIf=\"funds.length <1 \">\n                <th colspan=\"6\">No Record found</th>\n            </tr>\n        </tbody>\n    </table>\n</div>\n\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"addFunds\" role=\"dialog\">\n    <div class=\"modal-dialog\">\n\n        <!-- Modal content-->\n        <div class=\"modal-content boxed\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n                <h4 class=\"modal-title heading\">Add Sale !</h4>\n            </div>\n                <div class=\"modal-body\">\n                    <div class=\"input-group\">\n                        <span class=\"input-group-addon\"><i class=\"fa fa-info\"></i></span>\n                        <input id=\"name\" type=\"number\" class=\"form-control\"\n                            placeholder=\"Units\" [(ngModel)]=\"units\">\n                    </div>\n                    <div class=\"input-group\" style=\"width: 100%;\">\n                        <select class=\"form-control\"\n                        [(ngModel)]=\"medicineId\">\n                        <option value=\"noFilter\"> -- Select Employee -- </option>\n                        <option *ngFor=\"let medicine of medicines; let i=index;\" [value]=\"medicine.medicineId\">\n                            {{medicine.medicineName | titlecase}}</option>\n                    </select>\n                    </div>\n                </div>\n                <div class=\"modal-footer centered\">\n                    <button type=\"button\" class=\"btn\" data-dismiss=\"modal\" (click)=\"validateAndAdd()\">Add Sale</button>\n                </div>\n        </div>\n\n    </div>\n</div>\n\n<app-loader></app-loader>";
     /***/
   },
 
@@ -964,13 +964,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         path: "profile",
         component: _dashboard_profile_profile_component__WEBPACK_IMPORTED_MODULE_7__["ProfileComponent"]
       }, {
-        path: "employees",
+        path: "customers",
         component: _dashboard_employee_employee_component__WEBPACK_IMPORTED_MODULE_10__["EmployeeComponent"]
       }, {
-        path: "tasks",
+        path: "sales",
         component: _dashboard_tasks_tasks_component__WEBPACK_IMPORTED_MODULE_11__["TasksComponent"]
       }, {
-        path: "services",
+        path: "medicines",
         component: _dashboard_services_services_component__WEBPACK_IMPORTED_MODULE_12__["ServicesComponent"]
       }, {
         path: "",
@@ -1322,7 +1322,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(DashboardComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          if (this.router.url.toString().includes("employee")) this.highlight("employees");else if (this.router.url.toString().includes("tasks")) this.highlight("tasks");else if (this.router.url.toString().includes("services")) this.highlight("services");
+          if (this.router.url.toString().includes("sale")) this.highlight("sales");else if (this.router.url.toString().includes("medicine")) this.highlight("medicines");else if (this.router.url.toString().includes("customers")) this.highlight("customers");
         }
       }, {
         key: "toggleSideBar",
@@ -1478,7 +1478,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.form = this.formBuilder.group({
           email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
           name: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-          employeeCode: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
           phone: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]
         });
       }
@@ -1494,7 +1493,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this2 = this;
 
           this.loader.load();
-          this.api.listEmployee().subscribe(function (response) {
+          this.api.listCustomer().subscribe(function (response) {
             _this2.loader.resume();
 
             _this2.api.validateResponse(response, function (data) {
@@ -1511,7 +1510,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           var funds = this.form.value;
           this.loader.load();
-          this.api.addEmployee(funds).subscribe(function (response) {
+          this.api.addCustomer(funds).subscribe(function (response) {
             _this3.loader.resume();
 
             _this3.api.validateResponse(response, function (data) {
@@ -1519,7 +1518,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
               _this3.form.reset();
 
-              _this3.bot.success("Employee Added!");
+              _this3.bot.success("Customer Added!");
             }, function (error) {
               _this3.bot.fail(error);
             });
@@ -1800,10 +1799,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.bot = bot;
         this.funds = [];
         this.form = this.formBuilder.group({
-          description: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-          priority: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-          remarks: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-          serviceName: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]
+          medicineName: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+          mrp: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+          stock: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]
         });
       }
 
@@ -1818,7 +1816,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this6 = this;
 
           this.loader.load();
-          this.api.listServices().subscribe(function (response) {
+          this.api.listMedicines().subscribe(function (response) {
             _this6.loader.resume();
 
             _this6.api.validateResponse(response, function (data) {
@@ -1835,7 +1833,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           var funds = this.form.value;
           this.loader.load();
-          this.api.addService(funds).subscribe(function (response) {
+          this.api.addMedicine(funds).subscribe(function (response) {
             _this7.loader.resume();
 
             _this7.api.validateResponse(response, function (data) {
@@ -1843,7 +1841,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
               _this7.form.reset();
 
-              _this7.bot.success("Service Added!");
+              _this7.bot.success("Medicine Added!");
             }, function (error) {
               _this7.bot.fail(error);
             });
@@ -1963,28 +1961,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.api = api;
         this.bot = bot;
         this.taskName = "";
-        this.employeeId = "";
+        this.units = 1;
+        this.medicineId = "";
         this.funds = [];
-        this.employees = [];
+        this.medicines = [];
       }
 
       _createClass(TasksComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
           this.list();
-          this.listEmployees();
+          this.listMedicines();
         }
       }, {
-        key: "listEmployees",
-        value: function listEmployees() {
+        key: "listMedicines",
+        value: function listMedicines() {
           var _this8 = this;
 
           this.loader.load();
-          this.api.listEmployee().subscribe(function (response) {
+          this.api.listMedicines().subscribe(function (response) {
             _this8.loader.resume();
 
             _this8.api.validateResponse(response, function (data) {
-              _this8.employees = data;
+              _this8.medicines = data;
             }, function (error) {
               _this8.bot.fail(error);
             });
@@ -1996,7 +1995,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this9 = this;
 
           this.loader.load();
-          this.api.listTasks().subscribe(function (response) {
+          this.api.listSales().subscribe(function (response) {
             _this9.loader.resume();
 
             _this9.api.validateResponse(response, function (data) {
@@ -2013,11 +2012,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           var tasks = {};
           tasks.taskName = this.taskName;
-          tasks.employee = {
-            employeeId: this.employeeId
+          tasks.units = this.units;
+          tasks.medicine = {
+            medicineId: this.medicineId
           };
           this.loader.load();
-          this.api.addTask(tasks).subscribe(function (response) {
+          this.api.addSales(tasks).subscribe(function (response) {
             _this10.loader.resume();
 
             _this10.api.validateResponse(response, function (data) {
@@ -2025,7 +2025,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
               _this10.form.reset();
 
-              _this10.bot.success("Task Added!");
+              _this10.bot.success("Sales Added!");
             }, function (error) {
               _this10.bot.fail(error);
             });
@@ -2924,84 +2924,42 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.PROFILE_URL = this.SECURE + "/profile";
         this.FUNDS_URL = this.SECURE + "/funds";
         this.FUND_RAISER_URL = this.FUNDS_URL + "/raiser";
-        this.BOOKING_URL = this.SECURE + "/booking";
-        this.ROOM_URL = this.SECURE + "/room";
-        this.EMPLOYEE_URL = this.SECURE + "/employee";
-        this.SERVICE_URL = this.SECURE + "/services";
-        this.TASK_URL = this.SECURE + "/task";
+        this.CUSTOMER_URL = this.SECURE + "/customer";
+        this.SALES_URL = this.SECURE + "/sales";
+        this.MEDICINE_URL = this.SECURE + "/medicine";
         this.FORGOT_URL = this.HOST + "/public/forgot";
         this.RESET_URL = this.HOST + "/public/reset";
       }
 
       _createClass(ApiService, [{
-        key: "addFunds",
-        value: function addFunds(funds) {
-          return this.http.post(this.FUNDS_URL, funds);
+        key: "addCustomer",
+        value: function addCustomer(data) {
+          return this.http.post(this.CUSTOMER_URL, data);
         }
       }, {
-        key: "addEmployee",
-        value: function addEmployee(data) {
-          return this.http.post(this.EMPLOYEE_URL, data);
+        key: "addMedicine",
+        value: function addMedicine(data) {
+          return this.http.post(this.MEDICINE_URL, data);
         }
       }, {
-        key: "addTask",
-        value: function addTask(data) {
-          return this.http.post(this.TASK_URL, data);
+        key: "addSales",
+        value: function addSales(data) {
+          return this.http.post(this.SALES_URL, data);
         }
       }, {
-        key: "addService",
-        value: function addService(data) {
-          return this.http.post(this.SERVICE_URL, data);
+        key: "listCustomer",
+        value: function listCustomer() {
+          return this.http.get(this.CUSTOMER_URL);
         }
       }, {
-        key: "listEmployee",
-        value: function listEmployee() {
-          return this.http.get(this.EMPLOYEE_URL);
+        key: "listMedicines",
+        value: function listMedicines() {
+          return this.http.get(this.MEDICINE_URL);
         }
       }, {
-        key: "listServices",
-        value: function listServices() {
-          return this.http.get(this.SERVICE_URL);
-        }
-      }, {
-        key: "listTasks",
-        value: function listTasks() {
-          return this.http.get(this.TASK_URL);
-        }
-      }, {
-        key: "addFundRaiser",
-        value: function addFundRaiser(fundRaiser) {
-          return this.http.post(this.FUND_RAISER_URL, fundRaiser);
-        }
-      }, {
-        key: "listFunds",
-        value: function listFunds() {
-          return this.http.get(this.FUNDS_URL);
-        }
-      }, {
-        key: "listFundRaisers",
-        value: function listFundRaisers() {
-          return this.http.get(this.FUND_RAISER_URL);
-        }
-      }, {
-        key: "book",
-        value: function book(booking) {
-          return this.http.post(this.BOOKING_URL, booking);
-        }
-      }, {
-        key: "listBookings",
-        value: function listBookings(pageNumber, pageSize, sortBy, sortDirection) {
-          return this.http.get(this.BOOKING_URL + "/mine?pageNumber=" + pageNumber + "&pageSize=" + pageSize + "&sortBy=" + sortBy + "&sortDirection=" + sortDirection);
-        }
-      }, {
-        key: "listRooms",
-        value: function listRooms(bookingFrom, bookingTo) {
-          return this.http.get(this.ROOM_URL + "/query?from=" + bookingFrom + "&to=" + bookingTo);
-        }
-      }, {
-        key: "cancel",
-        value: function cancel(bookingId) {
-          return this.http.put(this.BOOKING_URL + "/" + bookingId, {});
+        key: "listSales",
+        value: function listSales() {
+          return this.http.get(this.SALES_URL);
         }
       }, {
         key: "forgot",
