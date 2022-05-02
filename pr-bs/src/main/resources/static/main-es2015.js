@@ -473,7 +473,7 @@ const routes = [{
                 component: _dashboard_services_services_component__WEBPACK_IMPORTED_MODULE_12__["ServicesComponent"]
             }, {
                 path: "",
-                redirectTo: "/employees",
+                redirectTo: "/customers",
                 pathMatch: "full"
             }],
         canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_4__["AuthGuardService"]]
